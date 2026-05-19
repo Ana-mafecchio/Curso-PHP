@@ -18,5 +18,16 @@
      <button type="reset" class="btn btn-success mt-2" >Limpar</button>  
 
     </form>
+
+    <?php
+    $arquivo = fopen("aluno-registro_db.txt", "r");
+    while(!feof($arquivo)){
+        $linha = fgets($arquivo);
+        echo "$linha<br>";
+    }
+    fclose($arquivo);
+    ?>
+    ?>
+
 </body>
 </html>
